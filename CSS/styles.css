@@ -140,12 +140,14 @@ body {
 }
 
 .contacts a {
-    color: var(--text-color);
-    text-decoration: none;
+    display: flex;
+    align-items: center;
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .contacts a:hover,
@@ -429,7 +431,7 @@ letter-spacing: 0.03em;
 
 /* ------------------------------CLIENTS-------------------------------------------- */
 
-.clients .container {
+.clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -495,7 +497,7 @@ letter-spacing: 0.03em;
 
  .footer-container {
      display: flex;
-     align-items: center;
+     align-items: baseline;
  }
 
  .first-part {
@@ -674,8 +676,12 @@ letter-spacing: 0.03em;
     margin-bottom: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link {
+    display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
